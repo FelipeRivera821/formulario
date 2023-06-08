@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>REGISTRO</h1>
+    <br>
+    <form method="GET" action="Registro.php">
+        <input type="text" name="ape" placeholder="Nombre(s)">
+        <br>
+        <br>
+        <input type="text" name="nom" placeholder="Apellido(s)">
+         <br>
+         <br>
+         FECHA DE NACIMIENTO
+         <br>
+         <input type="datetime-local" id="fechahora" name="fechahora"/>
+         <br>
+         <br>
+         SEXO
+        <input type="radio" name="op1" value="1">Masculino
+        <input type="radio" name="op1" value="2">Femenino
+<br>
+<br>
+SKILLS
+<br>
+        <input type="radio" name="op2" value="1">C++
+        <input type="radio" name="op3" value="1">PYTHON
+        <input type="radio" name="op4" value="1">BD
+        <br>
+        <input type="radio" name="op5" value="1">BASQUETBALL
+        <input type="radio" name="op6" value="1">FUTBOL
+        <input type="radio" name="op7" value="1">SCRVM
+<br>
+<br>
+FOTOGRAFIA:
+<input id="ficheros" type="file" name="file" id="file" accept=".jpg,.gif,.png"><br/>
+<br>
+<br>
+
+<datalist id="carreras">
+    <option>informatica</option>
+    <option>administracion</option>
+    <option>contaduria</option>
+    <option>ambientalismo</option>
+  </datalist>
+  Carrera
+  <input type="text" name="carreras" id="carreras" list="carreras" placeholder=Carreras>
+<br>
+<br>
+    <button type="submit" name="aceptar" value="enviar">enviar</button>
+
+</body>
+</html>
